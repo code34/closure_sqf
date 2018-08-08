@@ -1,7 +1,7 @@
-
 	newobject = {
-		_nom  = "bob";
-		_prenom = "charly";
+		private _nom  = "bob";
+		private _prenom = "charly";
+
 		{
 			_set_prenom = {
 				_prenom = _this;
@@ -18,10 +18,10 @@
 		};
 	};
 
-	sleep 1;
+	sleep 2;
 	
 	_object = call newobject;
 	["_set_prenom", "billy"] call _object;
 	_result = ["_get_prenom", ""] call _object;
-	hint format ["%1", _result];
+	hint format ["result: %1", _result];
 
