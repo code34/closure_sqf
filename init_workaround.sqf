@@ -19,12 +19,11 @@
 			};
 
 			_get_prenom = {
-					_data select 0;
-					(missionNamespace getVariable ["oo_data_%1", []]) select 0;
+				_data select 0;
 			};
 
 			_get_nom = {
-					_data select 1;
+				_data select 1;
 			};
 
 			(_this select 1) call (call compile (_this select 0));
